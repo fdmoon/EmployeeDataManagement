@@ -24,7 +24,7 @@ $(document).ready(function() {
 			tr.append("<td>" + childValue.role + "</td>");
 			tr.append("<td>" + childValue.startDate + "</td>");
 			tr.append("<td>" + "" + "</td>");
-			tr.append("<td>" + childValue.monthlyRate + "</td>");
+			tr.append("<td>" + "$" + childValue.monthlyRate + "</td>");
 			tr.append("<td>" + "" + "</td>");
 			
 			$("#display-article").append(tr);
