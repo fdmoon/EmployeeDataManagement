@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 	var database = firebase.database();
 
+	// database.ref("/EmployeeDataManagement").on("child_added", function(childsnapshot) {});
 	database.ref("/EmployeeDataManagement").on("value", function(snap) {
 		$("#display-article").empty();
 
