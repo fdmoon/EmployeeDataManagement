@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	// Initialize Firebase
 	var config = {
-		apiKey: "AIzaSyBo92eXeu-sm1osi-VuSZisMbT7-2wHHys",
-	    authDomain: "employeedatamanagement-d04ac.firebaseapp.com",
-	    databaseURL: "https://employeedatamanagement-d04ac.firebaseio.com",
-	    projectId: "employeedatamanagement-d04ac",
-	    storageBucket: "employeedatamanagement-d04ac.appspot.com",
-	    messagingSenderId: "558135677303"
+		apiKey: "AIzaSyCT0d8Wy8DXcIsYQp3hvc22dmz2GDuCZqU",
+		authDomain: "campbase-c64d6.firebaseapp.com",
+		databaseURL: "https://campbase-c64d6.firebaseio.com",
+		projectId: "campbase-c64d6",
+		storageBucket: "",
+		messagingSenderId: "343604388573"
 	};
 
 	firebase.initializeApp(config);
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 			tr.append("<td>" + "$" + childValue.monthlyRate + "</td>");
 
-			var total = childValue.monthlyRate * monthWorked;
+			var total = parseInt(childValue.monthlyRate) * parseInt(monthWorked);
 			tr.append("<td>" + total + "</td>");
 			
 			$("#display-article").append(tr);
